@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Generator</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon2.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <!-- Create Top Bar for Help & Instructions -->
+  <div class="top-bar">
+    <div class="title-text">Random Number Generator</div>
+    <div class="tabs">
+      <button class="tab-button" onclick="showAlert('Home')">Home</button>
+      <button class="tab-button" onclick="showAlert('Instructions')">Instructions</button>
+      <button class="tab-button" onclick="showAlert('Contact')">Contact</button>
+    </div>
+  </div>
+
+  <!-- Error Message if participantID is missing -->
+  <div id="error-message" style="display: none; color: #D32F2F; font-size: 24px; font-weight: bold;">
+    Error: We could not retrieve your Prolific ID. Please reach out to us on Prolific for assistance.
+  </div>
+
+  <!-- Create Title and Text Container for Instructions -->
+  <div class="title-container">
+    <h1><strong> Random Number Generator</strong></h1>
+    <h2>For this game, you will need a random number. Press the button below to generate a random number.</h2>
+    <h2>Once you generate a number, write it in the box that appears and then click 'submit'. You can take note of your number as well so you remember it.</h2>
+  </div>
+
+  <!-- Create Number Display and Button -->
+  <div id="number-display-container">
+    <div id="number-display"></div>
+  </div>
+  <button id="generateButton" onclick="generateNumber()">Generate Number</button>
+
+  <!-- Input Number Box (initially hidden) -->
+  <div id="inputBox" class="input-container" style="display: none;">
+    <input type="number" id="numberInput" placeholder="Enter your number">
+    <button onclick="submitNumber()">Submit</button>
+  </div>
+
+  <!-- Success Message -->
+  <div id="successMessage" style="display: none;" class="success-message">
+    Number successfully submitted
+  </div>
+
+  <button id="linkButton" style="display: none;" onclick="goToLink()">Return to the Study</button>
+
+  <script src="script.js"></script>
+
+  <!-- Create Bottom Bar -->
+  <div class="bottom-bar">
+    <div class="title-text2">University of Dundee</div>
+  </div>
+
+  <!-- Form to Submit Data -->
+  <div class="outcome" style="display: none;">
+    <form name="submit-to-google-sheet">
+      <input type="text" name="participantID" id="participantID" required>
+      <input type="number" name="generatedNumber" id="generatedNumber" required>
+      <input type="number" name="inputNumber" id="inputNumber" required>
+      <button type="submit" class="btn" style="display: none;">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

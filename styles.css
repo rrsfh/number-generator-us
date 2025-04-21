@@ -1,0 +1,194 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Top Bar Styles */
+.top-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  left: 10;
+  z-index: 0;
+  border-bottom: 2px solid #333;
+  text-transform: uppercase; 
+}
+
+.title-text {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 0.75%;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab-button {
+  background-color: #333;
+  color: #f0f0f0;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.tab-button:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Bar Styles */
+.bottom-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  color: #f0f0f0;
+  display: flex;
+  padding: 10px 30px;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  border-top: 2px solid #333;
+  text-transform: uppercase;
+}
+
+.title-text2 {
+  font-size: 24px;
+  font-weight: bold;
+  position: center;
+}
+
+/* Title Container Styles */
+.title-container {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Header Styles */
+h1 {
+  margin-top: 50px;
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  color:#333;
+}
+
+/* Number Display Container Styles */
+#number-display-container {
+  perspective: 600px;
+  margin-top: 50px;
+}
+
+#number-display {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Generate Button Styles */
+#generateButton, #linkButton {
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(11, 93, 30);
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#generateButton:hover, #linkButton:hover {
+  background-color: rgb(30, 106, 48);
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.success-message {
+  font-size: 20px;
+  color: green;
+  margin-top: 20px;
+}
+
+
+
+
+/* Styling for the input number box and submit button */
+#numberInput {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-weight: bold;
+}
+
+#numberInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
